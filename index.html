@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAYOR Setores</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; padding: 0; text-align: center; }
+    header { background: #2563eb; color: white; padding: 20px; }
+    main { margin: 20px; }
+    .card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }
+    img { width: 100%; border-radius: 8px; }
+    button { background: #2563eb; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-size: 16px; cursor: pointer; }
+    button:hover { background: #1e4ed8; }
+    footer { margin-top: 30px; color: #555; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KAYOR Setores</h1>
+    <p>Livros digitais e conteúdo premium</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>O Guia da KAYOR</h2>
+      <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=60" alt="Capa do livro">
+      <p>Um guia introdutório sobre como transformar ideias em negócios digitais.</p>
+      <h3>R$ 9,90</h3>
+      <button onclick="comprar()">Comprar e Baixar</button>
+      <p id="mensagem"></p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 KAYOR Setores — Todos os direitos reservados.
+  </footer>
+
+  <script>
+    function comprar() {
+      document.getElementById('mensagem').innerHTML = '<a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" download><button style="background:green">Baixar PDF</button></a>';
+    }
+  </script>
+</body>
+</html>
